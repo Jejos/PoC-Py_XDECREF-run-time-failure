@@ -1,0 +1,24 @@
+
+pip install opencv_python 
+	// opencv_python-4.11.0 is the computer vision library I need
+	// without calling this I couldn't yet reproduce the problem
+
+open PoC.sln
+
+
+switch to Release x64
+
+
+run in VisualStudio --> run-time check failure
+
+
+run outside VS --> "Before" is output, but not "After"
+
+
+enable / disable
+	#define SHOW_CRASH
+
+
+enable / disable some lines in
+	image_processor.py
+
